@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ADCHTI VAKANSIYA</title>
+  <link rel="icon" href="rasm/logo-1.png" type="image/png"> 
+   <style>
+    /* Reset va asosiy uslublar */
+    * {
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 40px 30px 30px 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 380px;
+      text-align: center;
+    }
+
+    /* Rasm */
+    .logo {
+      max-width: 120px;
+      margin: 0 auto 15px auto;
+      display: block;
+      filter: drop-shadow(0 3px 3px rgba(74, 137, 220, 0.3));
+    }
+
+    /* Matn */
+    .title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #3a61a8;
+      margin-bottom: 35px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* Forma */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .group {
+      position: relative;
+      width: 100%;
+    }
+
+    input {
+      font-size: 16px;
+      padding: 12px 12px 12px 12px;
+      border: 2px solid #d1d9e6;
+      border-radius: 8px;
+      width: 100%;
+      transition: border-color 0.3s ease;
+      outline: none;
+      font-weight: 500;
+      color: #333;
+    }
+
+    input:focus {
+      border-color: #3a61a8;
+      box-shadow: 0 0 8px rgba(58, 97, 168, 0.4);
+    }
+
+    label {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      color: #8a8f99;
+      font-size: 14px;
+      pointer-events: none;
+      transition: 0.3s ease all;
+      background: white;
+      padding: 0 5px;
+    }
+
+    input:focus + label,
+    input:not(:placeholder-shown) + label {
+      top: -8px;
+      font-size: 12px;
+      color: #3a61a8;
+    }
+
+    .btn-link {
+  background-color: #3a61a8;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(58, 97, 168, 0.4);
+}
+
+.btn-link:hover {
+  background-color: #2d4a76;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="rasm/logo-1.png" alt="ADCHTI Logo" class="logo" />
+    <h1 class="title">ADCHTI Vakansiya</h1>
+
+    <form>
+      <div class="group">
+        <input type="text" id="login" placeholder=" "  />
+        <label for="login">Login</label>
+      </div>
+      <div class="group">
+        <input type="password" id="password" placeholder=" " />
+        <label for="password">Parol</label>
+      </div>
+      <a href="M_saqlash.html" class="btn-link">Kirish</a>
+    </form>
+  </div>
+</body>
+
+</html>

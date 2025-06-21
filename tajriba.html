@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="rasm/logo-1.png" type="image/png" />
+  <title>Vakansiya e'lon qilish</title>
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    /* Form container styling */
+    .form-container {
+      flex-grow: 1;
+      padding: 40px 15px;
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+      width: 100%;
+    }
+
+    h2 {
+      color: #3a61a8;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    form {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      font-weight: 600;
+      color: #222;
+    }
+
+    /* Submit button style */
+    button[type="submit"] {
+      background-color: #3a61a8;
+      border: none;
+      color: white;
+      padding: 12px 0;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      width: 150px;
+      margin: 20px auto 0 auto;
+      display: block;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #2a4680;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR (Bootstrap 5) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="rasm/logo-1.png" alt="Logo" style="height:40px; margin-right:10px;">
+      Andijon davlat chet tillari instituti
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="asosiy.html">Asosiy</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Vakansiyalar</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Savol-Javoblar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Test savollari</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Me'yoriy-huquqiy hujjatlar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Test jarayoni</a></li>
+        <li class="nav-item"><a href="login.html" class="btn btn-primary ms-lg-3">Kabinetga kirish</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- FORM CONTAINER -->
+<div class="container-fluid form-container">
+  <h2>Vakansiya e'lon qilish</h2>
+  <form class="row g-3" novalidate>
+    <div class="col-lg-3 col-md-6">
+      <label for="region" class="form-label">Viloyat:</label>
+      <select id="region" class="form-select" required>
+        <option value="">Tanlang</option>
+        <option>Andijon viloyati</option>
+        <option>Buxoro viloyati</option>
+        <option>Farg'ona viloyati</option>
+        <option>Jizzax viloyati</option>
+        <option>Namangan viloyati</option>
+        <option>Navoiy viloyati</option>
+        <option>Qashqadaryo viloyati</option>
+        <option>Samarqand viloyati</option>
+        <option>Sirdaryo viloyati</option>
+        <option>Surxondaryo viloyati</option>
+        <option>Toshkent viloyati</option>
+        <option>Xorazm viloyati</option>
+        <option>Qoraqalpog‘iston Respublikasi</option>
+        <option>Toshkent shahri</option>
+      </select>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <label for="district" class="form-label">Tuman:</label>
+      <select id="district" class="form-select" required>
+        <option value="">Avval viloyatni tanlang</option>
+      </select>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <label for="position" class="form-label">Lavozim turi:</label>
+      <select id="position" class="form-select" required>
+        <option value="">Tanlang</option>
+        <option>Bosh mutaxassis</option>
+        <option>Yetakchi mutaxassis</option>
+        <option>Mutaxassis</option>
+      </select>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <label for="department" class="form-label">Bo‘lim:</label>
+      <select id="department" class="form-select" required>
+        <option value="">Tanlang</option>
+        <option>Kadrlar bo‘limi</option>
+        <option>IT bo‘limi</option>
+        <option>Moliya bo‘limi</option>
+      </select>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <label for="education" class="form-label">Ta’lim darajasi:</label>
+      <select id="education" class="form-select" required>
+        <option>Oliy</option>
+        <option>O‘rta maxsus</option>
+        <option>Bakalavr</option>
+        <option>Magistr</option>
+      </select>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <label for="experience" class="form-label">Tajriba (yil):</label>
+      <input id="experience" type="number" class="form-control" value="1" min="0" required />
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <label for="phd" class="form-label">PhD/DSc:</label>
+      <select id="phd" class="form-select" required>
+        <option>Talab qilinmagan</option>
+        <option>Talab qilinadi</option>
+      </select>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <label for="stavka" class="form-label">Stavka:</label>
+      <input id="stavka" type="number" step="0.1" min="0.1" max="1" value="0.5" class="form-control" required />
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <label for="candidateCount" class="form-label">Nomzodlar soni:</label>
+      <input id="candidateCount" type="number" value="0" min="0" class="form-control" required />
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <label for="daysLeft" class="form-label">Qolgan kun:</label>
+      <input id="daysLeft" type="number" value="5" min="0" class="form-control" required />
+    </div>
+
+    <div class="col-12 d-flex justify-content-center">
+      <button type="submit">Saqlash</button>
+    </div>
+  </form>
+</div>
+
+<!-- Bootstrap 5 JS + Popper.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.getElementById('region').addEventListener('change', function () {
+    const region = this.value;
+    const district = document.getElementById('district');
+    district.innerHTML = '<option>Yuklanmoqda...</option>';
+
+    const regionDistricts = {
+      "Qoraqalpog‘iston Respublikasi": ['Beruniy tumani', 'Nukus shahri'],
+      "Andijon viloyati": ['Andijon shahri', 'Asaka', 'Shahrixon'],
+      "Buxoro viloyati": ['Buxoro shahri', 'G‘ijduvon'],
+      "Toshkent shahri": ['Yakkasaroy', 'Olmazor', 'Yunusobod'],
+      "Farg'ona viloyati": ['Qo‘qon', 'Marg‘ilon']
+    };
+
+    if (regionDistricts[region]) {
+      district.innerHTML = '<option value="">Tumanni tanlang</option>';
+      regionDistricts[region].forEach(function(d) {
+        const opt = document.createElement('option');
+        opt.value = d;
+        opt.textContent = d;
+        district.appendChild(opt);
+      });
+    } else {
+      district.innerHTML = '<option value="">Tumanlar topilmadi</option>';
+    }
+  });
+</script>
+
+</body>
+</html>
